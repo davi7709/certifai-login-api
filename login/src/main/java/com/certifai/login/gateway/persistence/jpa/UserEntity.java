@@ -9,7 +9,7 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String email;
-    private String passwordHash;
+    private String password;
 
     public Long getId() {
         return id;
@@ -28,10 +28,10 @@ public class UserEntity {
     }
 
     public String getPasswordHash() {
-        return passwordHash;
+        return password;
     }
 
     public void setPasswordHash(String passwordHash) {
-        this.passwordHash = passwordHash;
+        this.password = password;
     }
 }
